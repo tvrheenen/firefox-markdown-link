@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Copy URL",
+    "version": "1.0.0",
+    "author": "Thijs van Rheenen",
+    "description": "Copy the URL of the current tab to your clipboard using the Markdown External Link format.",
+    "permissions": [
+        "clipboardWrite",
+        "tabs"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "browser_action": {
+        "theme_icons": [
+            {
+                "light": "icons/copy-light.png",
+                "dark": "icons/copy-dark.png",
+                "size": 256
+            }
+        ],
+        "default_title": "Copy URL"
+    }
+}
